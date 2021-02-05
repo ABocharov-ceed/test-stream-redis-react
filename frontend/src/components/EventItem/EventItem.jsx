@@ -2,7 +2,6 @@ import React from 'react';
 import { format } from 'date-fns';
 import {CheckMark} from '../../environment/icons';
 import { EventTypes } from '../../constants';
-
 import {
   ItemCard,
   Icon,
@@ -20,7 +19,7 @@ const getContentByType = (event) => {
 		case EventTypes.track:
 			return event.event;
 		default:
-			return undefined;
+			return 'No content';
 	}
 };
 

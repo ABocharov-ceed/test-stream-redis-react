@@ -1,6 +1,5 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import io from 'socket.io-client';
-// import { SOCKET_ENDPOINT } from '../constants';
 
 const useEventStream = () => {
 	const [state, setState] = useState({
